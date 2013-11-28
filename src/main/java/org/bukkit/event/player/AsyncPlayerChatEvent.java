@@ -99,10 +99,20 @@ public class AsyncPlayerChatEvent extends PlayerEvent implements Cancellable {
         return recipients;
     }
 
+    /**
+     * Gets the cancelled state of this event.
+     *
+     * @return true if event is cancelled
+     */
     public boolean isCancelled() {
         return cancel ;
     }
 
+    /**
+     * Sets the cancelled state of this event.
+     *
+     * @param cancel Set to true to set this event as cancelled
+     */
     public void setCancelled(boolean cancel) {
         this.cancel = cancel;
     }
